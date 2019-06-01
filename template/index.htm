@@ -1,0 +1,44 @@
+<!--{block return}-->
+<a href="javascript:;" onclick="showWindow('share_to_wechat', 'plugin.php?id=share_to_wechat&threadqr={$_G[tid]}&share=yes')"><i><img src="source/plugin/share_to_wechat/images/weixin.png" />微信</i></a>
+
+
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script>
+wx.config({
+	debug: true,
+    appId: '$signPackage["appId"]',
+    timestamp: $signPackage["timestamp"],
+    nonceStr: '$signPackage["nonceStr"]',
+    signature: '$signPackage["signature"]',
+    jsApiList: [
+    	'scanQRCode',
+		'checkJsApi',
+		'onMenuShareTimeline',
+		'onMenuShareAppMessage',
+		'onMenuShareQQ',
+		'onMenuShareWeibo'
+    ]
+});
+
+window.share_config = {
+	"share":{
+  		"imgUrl": '$_G["siteurl"]',
+  		"desc": "document.getElementsByName('description')[0].content",
+  		"title": 'document.title',
+  		"link": '$signPackage["url"]',
+  		"success":function(){},
+  		"cancel": function(){}
+  	}
+};
+
+wx.ready(function () {
+    // 在这里调用 API
+    wx.onMenuShareTimeline(share_config.share);
+    wx.onMenuShareAppMessage(share_config.share);
+    wx.onMenuShareQQ(share_config.share);
+    wx.onMenuShareWeibo(share_config.share);
+});
+
+</script>
+<!--{/block}-->
+

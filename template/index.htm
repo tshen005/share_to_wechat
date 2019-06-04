@@ -1,8 +1,10 @@
 <!--{block return}-->
-<a href="javascript:;" onclick="showWindow('share_to_wechat', 'plugin.php?id=share_to_wechat&threadqr={$_G[tid]}&share=yes')"><i><img src="source/plugin/share_to_wechat/images/weixin.png" />微信</i></a>
+<a href="javascript:;" onclick="showWindow('share_to_wechat', 'plugin.php?id=share_to_wechat&threadqr={$_G[tid]}&share=yes&chl=$urlToEncode')"><i><img src="source/plugin/share_to_wechat/images/weixin.png" />{lang share_to_wechat:wechat_share}</i></a>
 
 
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
 <script>
 wx.config({
 	debug: true,
@@ -12,19 +14,21 @@ wx.config({
     signature: '$signPackage["signature"]',
     jsApiList: [
     	'scanQRCode',
-		'checkJsApi',
-		'onMenuShareTimeline',
-		'onMenuShareAppMessage',
-		'onMenuShareQQ',
-		'onMenuShareWeibo'
+		  'checkJsApi',
+		  'onMenuShareTimeline',
+		  'onMenuShareAppMessage',
+		  'onMenuShareQQ',
+		  'onMenuShareWeibo'
     ]
 });
 
+
+
 window.share_config = {
 	"share":{
-  		"imgUrl": '$_G["siteurl"]',
-  		"desc": "document.getElementsByName('description')[0].content",
-  		"title": 'document.title',
+  		"imgUrl": '$content[imgUrl]',
+  		"desc": '$content[desc]',
+  		"title": '$content[title]',
   		"link": '$signPackage["url"]',
   		"success":function(){},
   		"cancel": function(){}

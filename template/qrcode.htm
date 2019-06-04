@@ -1,13 +1,14 @@
 <!--{template common/header}-->
 <div class="f_c">
 <h3 class="flb" id="fctrl_wechat_share" style="cursor: move;">
-<em id="return_wechat_share" ></em>
+<em id="return_wechat_share" >{lang share_to_wechat:qr_title}</em>
 <span>
-<a href="javascript:;" class="flbc" onclick="hideWindow('$_GET['handlekey']');" title="{lang close}"></a>
+<a href="javascript:;" class="flbc" onclick="hideWindow('$_GET['handlekey']');" title="{lang close}">{lang close}</a>
 </span>
 </h3>
 <div class="c" align="center">
 <img src="$pngAbsoluteFilePath" width="200" height="200">
+<p>{lang share_to_wechat:qr_desc}</p>
 <br>
 
 </div>

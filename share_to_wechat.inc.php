@@ -31,7 +31,6 @@ if($share == 'yes') {
 
 	QRcode::png($url, $pngAbsoluteFilePath, $errorCorrectionLevel, $matrixPointSize, 2);
 
-/*  generate qrcode with logo inside
 
 	$logo = 'source/plugin/share_to_wechat/images/logo.png';
 
@@ -52,10 +51,10 @@ if($share == 'yes') {
 
 		imagepng($image, $pngAbsoluteFilePath);
 	}
-*/	
+	
 	include_once template('share_to_wechat:qrcode');
 
-	//imagedestroy($fileName);
+	
 	//unlink($pngAbsoluteFilePath);
 }
 

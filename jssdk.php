@@ -22,6 +22,8 @@ class JSSDK {
     // 注意 URL 一定要动态获取，不能 hardcode.
     $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
     $url = "$protocol$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    
+
     $url = urldecode(urlencode($url));
     $timestamp = time();
     $nonceStr = $this->createNonceStr();
@@ -40,7 +42,7 @@ class JSSDK {
       "rawString" => $string
     );
     return $signPackage; 
-  }//fr om www.ymg 6.com
+  }
 
   private function createNonceStr($length = 16) {
     $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -73,7 +75,7 @@ class JSSDK {
   }
 
   private function getAccessToken() {
-    global $_G;//fr om www.ymg 6.com
+    global $_G;
     // access_token 应该全局存储与更新，以下代码以写入到文件中做示例
     if ($_G[cache][share_to_wechat_access_token][expire_time] < time()) {
       // 如果是企业号用以下URL获取access_token

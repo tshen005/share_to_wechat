@@ -1,4 +1,9 @@
+
 <!--{block return}-->
+
+<!-- 
+    execute script in share_to_wechat.inc.php
+-->
 <a href="javascript:;" onclick="showWindow('share_to_wechat', 'plugin.php?id=share_to_wechat&threadqr={$_G[tid]}&share=yes&chl=$urlToEncode')"><i><img src="source/plugin/share_to_wechat/images/weixin.png" />{lang share_to_wechat:wechat_share}</i></a>
 
 
@@ -23,26 +28,24 @@ wx.config({
 });
 
 
-
-window.share_config = {
-	"share":{
-  		"imgUrl": '$content[imgUrl]',
-  		"desc": '$content[desc]',
-  		"title": '$content[title]',
-  		"link": '$signPackage["url"]',
-  		"success":function(){},
-  		"cancel": function(){}
-  	}
-};
-
 wx.ready(function () {
-    // 在这里调用 API
-    wx.onMenuShareTimeline(share_config.share);
-    wx.onMenuShareAppMessage(share_config.share);
-    wx.onMenuShareQQ(share_config.share);
-    wx.onMenuShareWeibo(share_config.share);
+    
+    var share_config = {
+      "imgUrl": '$content[imgUrl]',
+      "desc": '$content[desc]',
+      "title": '$content[title]',
+      "link": '$signPackage["url"]',
+      "success":function(){},
+      "cancel": function(){}
+    };
+
+    wx.onMenuShareTimeline(share_config);
+    wx.onMenuShareAppMessage(share_config);
+    wx.onMenuShareQQ(share_config);
+    wx.onMenuShareWeibo(share_config);
 });
 
 </script>
 <!--{/block}-->
+
 

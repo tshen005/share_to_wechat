@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.4]]></item>
+	<item id="Time"><![CDATA[2019-06-06 06:47]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/dir_SC_UTF8/upload/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[1]]></item>
+			<item id="name"><![CDATA[微信分享]]></item>
+			<item id="identifier"><![CDATA[share_to_wechat]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[share_to_wechat/]]></item>
+			<item id="copyright"><![CDATA[tong]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[share_to_wechat]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[11]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.4]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[AppID]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[AppID]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[wx68aa1faefa37936d]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[1]]></item>
+				<item id="title"><![CDATA[AppSecret]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[AppSecret]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[b9781d79081867f7f986eb31537de285]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[2]]></item>
+				<item id="title"><![CDATA[默认分享图标]]></item>
+				<item id="description"><![CDATA[请填写包含http的完整链接]]></item>
+				<item id="variable"><![CDATA[default_imgUrl]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[3]]></item>
+				<item id="title"><![CDATA[默认分享描述]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[default_desc]]></item>
+				<item id="type"><![CDATA[text]]></item>
+				<item id="value"><![CDATA[]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[4]]></item>
+				<item id="title"><![CDATA[图标显示位置]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[position]]></item>
+				<item id="type"><![CDATA[select]]></item>
+				<item id="value"><![CDATA[2]]></item>
+				<item id="extra"><![CDATA[1=viewthread_useraction
+2=viewthread_postfooter]]></item>
+			</item>
+		</item>
+		<item id="language">
+			<item id="scriptlang">
+				<item id="wechat_share"><![CDATA[微信分享]]></item>
+			</item>
+			<item id="templatelang">
+				<item id="wechat_share"><![CDATA[微信分享]]></item>
+				<item id="qr_title"><![CDATA[分享到微信]]></item>
+				<item id="qr_desc"><![CDATA[扫一扫，分享到微信]]></item>
+			</item>
+		</item>
+	</item>
+</root>

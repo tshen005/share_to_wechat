@@ -18,7 +18,7 @@ if($share == 'yes') {
 	$errorCorrectionLevel = 'M';
 	$matrixPointSize = 5;
 	$tempDir = 'source/plugin/share_to_wechat/';
-	$fileName = 'qrcode_'.md5($threadqr); 
+	$fileName = 'qrcode_'.md5($threadqr).time(); 
 	$pngAbsoluteFilePath = $tempDir.$fileName.'.png';
 
 	if(!isset($_GET['chl'])) {

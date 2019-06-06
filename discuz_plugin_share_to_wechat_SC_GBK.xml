@@ -2,13 +2,13 @@
 <root>
 	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
 	<item id="Version"><![CDATA[X3.4]]></item>
-	<item id="Time"><![CDATA[2019-06-05 09:03]]></item>
+	<item id="Time"><![CDATA[2019-06-06 06:47]]></item>
 	<item id="From"><![CDATA[Discuz! Board (http://127.0.0.1/dir_SC_UTF8/upload/)]]></item>
 	<item id="Data">
 		<item id="plugin">
 			<item id="available"><![CDATA[1]]></item>
 			<item id="adminid"><![CDATA[1]]></item>
-			<item id="name"><![CDATA[å¾®ä¿¡åˆ†äº«]]></item>
+			<item id="name"><![CDATA[Î¢ÐÅ·ÖÏí]]></item>
 			<item id="identifier"><![CDATA[share_to_wechat]]></item>
 			<item id="description"><![CDATA[]]></item>
 			<item id="datatables"><![CDATA[]]></item>
@@ -17,32 +17,6 @@
 			<item id="version"><![CDATA[1.0]]></item>
 			<item id="__modules">
 				<item id="0">
-					<item id="name"><![CDATA[delete_qrcode]]></item>
-					<item id="param"><![CDATA[]]></item>
-					<item id="menu"><![CDATA[]]></item>
-					<item id="url"><![CDATA[]]></item>
-					<item id="type"><![CDATA[1]]></item>
-					<item id="adminid"><![CDATA[0]]></item>
-					<item id="displayorder"><![CDATA[0]]></item>
-					<item id="navtitle"><![CDATA[]]></item>
-					<item id="navicon"><![CDATA[]]></item>
-					<item id="navsubname"><![CDATA[]]></item>
-					<item id="navsuburl"><![CDATA[]]></item>
-				</item>
-				<item id="1">
-					<item id="name"><![CDATA[share_to_wechat]]></item>
-					<item id="param"><![CDATA[]]></item>
-					<item id="menu"><![CDATA[]]></item>
-					<item id="url"><![CDATA[]]></item>
-					<item id="type"><![CDATA[1]]></item>
-					<item id="adminid"><![CDATA[0]]></item>
-					<item id="displayorder"><![CDATA[0]]></item>
-					<item id="navtitle"><![CDATA[]]></item>
-					<item id="navicon"><![CDATA[]]></item>
-					<item id="navsubname"><![CDATA[]]></item>
-					<item id="navsuburl"><![CDATA[]]></item>
-				</item>
-				<item id="2">
 					<item id="name"><![CDATA[share_to_wechat]]></item>
 					<item id="param"><![CDATA[]]></item>
 					<item id="menu"><![CDATA[]]></item>
@@ -79,8 +53,8 @@
 			</item>
 			<item id="2">
 				<item id="displayorder"><![CDATA[2]]></item>
-				<item id="title"><![CDATA[é»˜è®¤åˆ†äº«å›¾æ ‡]]></item>
-				<item id="description"><![CDATA[è¯·å¡«å†™åŒ…å«httpçš„å®Œæ•´é“¾æŽ¥]]></item>
+				<item id="title"><![CDATA[Ä¬ÈÏ·ÖÏíÍ¼±ê]]></item>
+				<item id="description"><![CDATA[ÇëÌîÐ´°üº¬httpµÄÍêÕûÁ´½Ó]]></item>
 				<item id="variable"><![CDATA[default_imgUrl]]></item>
 				<item id="type"><![CDATA[text]]></item>
 				<item id="value"><![CDATA[]]></item>
@@ -88,7 +62,7 @@
 			</item>
 			<item id="3">
 				<item id="displayorder"><![CDATA[3]]></item>
-				<item id="title"><![CDATA[é»˜è®¤åˆ†äº«æè¿°]]></item>
+				<item id="title"><![CDATA[Ä¬ÈÏ·ÖÏíÃèÊö]]></item>
 				<item id="description"><![CDATA[]]></item>
 				<item id="variable"><![CDATA[default_desc]]></item>
 				<item id="type"><![CDATA[text]]></item>
@@ -97,7 +71,7 @@
 			</item>
 			<item id="4">
 				<item id="displayorder"><![CDATA[4]]></item>
-				<item id="title"><![CDATA[å›¾æ ‡æ˜¾ç¤ºä½ç½®]]></item>
+				<item id="title"><![CDATA[Í¼±êÏÔÊ¾Î»ÖÃ]]></item>
 				<item id="description"><![CDATA[]]></item>
 				<item id="variable"><![CDATA[position]]></item>
 				<item id="type"><![CDATA[select]]></item>
@@ -108,12 +82,12 @@
 		</item>
 		<item id="language">
 			<item id="scriptlang">
-				<item id="wechat_share"><![CDATA[å¾®ä¿¡åˆ†äº«]]></item>
+				<item id="wechat_share"><![CDATA[Î¢ÐÅ·ÖÏí]]></item>
 			</item>
 			<item id="templatelang">
-				<item id="wechat_share"><![CDATA[å¾®ä¿¡åˆ†äº«]]></item>
-				<item id="qr_title"><![CDATA[åˆ†äº«åˆ°å¾®ä¿¡]]></item>
-				<item id="qr_desc"><![CDATA[æ‰«ä¸€æ‰«ï¼Œåˆ†äº«åˆ°å¾®ä¿¡]]></item>
+				<item id="wechat_share"><![CDATA[Î¢ÐÅ·ÖÏí]]></item>
+				<item id="qr_title"><![CDATA[·ÖÏíµ½Î¢ÐÅ]]></item>
+				<item id="qr_desc"><![CDATA[É¨Ò»É¨£¬·ÖÏíµ½Î¢ÐÅ]]></item>
 			</item>
 		</item>
 	</item>

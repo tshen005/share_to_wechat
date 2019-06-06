@@ -43,6 +43,8 @@ class plugin_share_to_wechat {
 
 		$content = $this->_fetch_shared_content();
 
+		// get AppID & AppSecret from cache
+		
 		$AppID = $_G[cache][plugin][share_to_wechat][AppID];
 		$AppSecret = $_G[cache][plugin][share_to_wechat][AppSecret];
 
